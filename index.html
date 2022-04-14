@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Color Scheme Generator</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<header>
+		<h1>Color Scheme Generator.</h1>
+		<p>Uses <a href="http://colormind.io/">Colormind</a> for the palette and <a href="https://webaim.org/resources/contrastchecker/">WebAIM</a> for the contrast checker.</p>
+		<label for="theme" class="toggle-label">Toggle dark mode</label>	
+		<input type="checkbox" id="theme" aria-label="toggle dark mode" class="toggle-input" checked>	
+	</header>
+
+	<section class="wrapper">
+		<div class="container colorChoice">
+				<h2>Choose your color</h2>
+				<label for="colorPicker">Color Picker</label>
+				<input type="color" name="color picker" id="colorPicker" value="#483d8b">
+
+				<label for="colorHex">HEX or RGB Value</label>
+				<input type="text" name="input color by hex" id="colorHex" value="#483d8b">
+				
+				<div class="colorSquare" id="colorSquare"></div>
+				<button type="submit" id="paletteButton">Generate palette</button>
+		</div>
+	</section>
+
+		<article id="main" class="">
+			<div class="container">
+				<section class="paletteSection">
+<!-- 					<div class="paletteDiv" id="paletteC1"><span>Test</span></div>
+					<div class="paletteDiv" id="paletteC2"></div>
+					<div class="paletteDiv" id="paletteC3"></div>
+					<div class="paletteDiv" id="paletteC4"></div>
+					<div class="paletteDiv" id="paletteC5"></div> -->
+				</section> 
+				<section class="contrast">
+					<h3>Feugiat posuere</h3>
+					<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+				</section>
+			</div>
+		</article>
+		<script src="js/darkmode.js"></script>
+		<script src="js/main.js"></script>
+</body>
+</html>
