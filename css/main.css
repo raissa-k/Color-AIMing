@@ -91,7 +91,6 @@ body {
 .colorSquare {
    width: auto;
    height: 5rem;
-   background-color: #483d8b;
 }
 
 .paletteSection {
@@ -102,8 +101,8 @@ body {
 .paletteDiv {
    outline-offset: 0.25rem;
    outline: 0.1rem dashed var(--color-primary);
-   margin: 0.6rem;
-   width: 18%;
+   margin: 0.5rem;
+   width: 20%;
    height: 12rem;
    position: relative;
 }
@@ -112,7 +111,7 @@ body {
    width: 100%;
    position: absolute;
    text-align: center;
-   font-size: var(--font-size-h4);
+   font-size: var(--font-size-text);
    bottom: 0;
    background-color: var(--color-secondary);
    color: var(--color-primary);
@@ -284,6 +283,42 @@ a:hover {
    border-width: 4px;
 }
 
+.displayResults, .contrastRatio, .contrast > * {
+   border: solid 0.25rem var(--color-primary);
+   padding: 2rem;
+}
+
+span.pass {
+   background-color: #006400;
+   color: #ffffff;
+   padding: 0.2rem;
+   border-radius: 5px;
+}
+
+span.fail {
+   background-color: #c00000;
+   color: #ffffff;
+   padding: 0.2rem;
+   border-radius: 5px;
+}
+
+#testComp {
+   width: 5rem;
+   height: 5rem;
+}
+
+.contrastRatio {
+   padding: 0.5rem;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+#contrastRatio {
+   font-size: var(--font-size-h2);
+}
+
 @media all and (min-width: 1300px) {
    header .container > * + * {
       margin-top: 0;
@@ -309,15 +344,38 @@ a:hover {
       left: 1rem;
       z-index: 100;
       width: 25%;
+
+   
    }
 
+   .container2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction:reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+   }
+   
+   .displayTest {
+      width: 70%;
+   }
+   
+   .displayResults {
+      width: 30%;
+      margin-top: 0;
+   }
+   
+
    #main div.container{
-	padding: 2rem 4rem 4rem 4rem;
-    width: 100%;
+	padding: 2rem 2rem 4rem 15%;
 	margin-left: 15%;
 }
 }
-.container {
+.container, #main > .container2 {
    background-color: var(--color-secondary);
    padding: 2em;
    border: 4px solid;

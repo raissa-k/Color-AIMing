@@ -17,10 +17,10 @@
 		<div class="container colorChoice">
 				<h2>Choose your color</h2>
 				<label for="colorPicker">Color Picker</label>
-				<input type="color" name="color picker" id="colorPicker" value="#483d8b">
+				<input type="color" name="color picker" id="colorPicker" value="#000000">
 
 				<label for="colorHex">HEX or RGB Value</label>
-				<input type="text" name="input color by hex" id="colorHex" value="#483d8b">
+				<input type="text" name="input color by hex" id="colorHex" value="" placeholder="#000000">
 				
 				<div class="colorSquare" id="colorSquare"></div>
 				<button type="submit" id="paletteButton">Generate palette</button>
@@ -30,19 +30,48 @@
 		<article id="main" class="">
 			<div class="container">
 				<section class="paletteSection">
-<!-- 					<div class="paletteDiv" id="paletteC1"><span>Test</span></div>
-					<div class="paletteDiv" id="paletteC2"></div>
-					<div class="paletteDiv" id="paletteC3"></div>
-					<div class="paletteDiv" id="paletteC4"></div>
-					<div class="paletteDiv" id="paletteC5"></div> -->
+					<p>Dedicated to krrrafty.</p>
 				</section> 
-				<section class="contrast">
-					<h3>Feugiat posuere</h3>
-					<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+				<section>
+					<h3>Accessible color contrast</h3>
+					<label for="colorText">HEX value to text and component color</label>
+					<input type="text" name="input text color by hex" id="colorText" value="" placeholder="#000000">
+					<br>
+					<label for="colorBack">HEX value to background color</label>
+					<input type="text" name="input background color by hex" id="colorBack" value="" placeholder="#ffffff">
+					<br>
+					<button type="submit" id="contrastButton">Test constrast</button>
 				</section>
+				<div class="container2 contrast">
+					<div class="displayTest container2">
+						<h3>WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</h4>
+						<p>WCAG 2.0 level AA requires a contrast ratio of and 3:1 for large text.</p> 
+						<p>WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components.</p>
+						<svg height="100" width="100">
+							<circle id="testComp" cx="50" cy="50" r="40" fill="#fefefe"/>
+						</svg>
+						<p>Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.</p>
+					</div>
+					<div class="displayResults">
+						<div class="contrastRatio">
+							<span>Contrast Ratio: <span id="contrastRatio">?</span>:1</span>
+						</div>
+						<h4>Normal Text</h4>
+						<p>WCAG AA:</p><span id="aa" class="pass">pass</span>
+						<p>WCAG AAA:</p><span id="aaa" class="fail">ail</span>
+
+						<h4>Large Text</h4>
+						<p>WCAG AA:</p><span id="aaL"></span>
+						<p>WCAG AAA:</p><span id="aaaL"></span>
+
+						<h4>Components</h4>
+						<p>WCAG AA:</p><span id="aaLC"></span>
+					</div>
+				</div>
 			</div>
 		</article>
 		<script src="js/darkmode.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/genPalette.js"></script>
+		<script src="js/testContrast.js"></script>
 </body>
 </html>
