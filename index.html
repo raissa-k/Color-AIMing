@@ -47,8 +47,8 @@
 						<h3>WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.</h4>
 						<p>WCAG 2.0 level AA requires a contrast ratio of and 3:1 for large text.</p> 
 						<p>WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components.</p>
-						<svg height="100" width="100">
-							<circle id="testComp" cx="50" cy="50" r="40" fill="#fefefe"/>
+						<svg height="5rem" width="5rem">
+						<rect id="testComp" fill=""/>
 						</svg>
 						<p>Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.</p>
 					</div>
@@ -56,9 +56,10 @@
 						<div class="contrastRatio">
 							<span>Contrast Ratio: <span id="contrastRatio">?</span>:1</span>
 						</div>
+						<div class="contrastInfo">
 						<h4>Normal Text</h4>
-						<p>WCAG AA:</p><span id="aa" class="pass">pass</span>
-						<p>WCAG AAA:</p><span id="aaa" class="fail">ail</span>
+						<p>WCAG AA:</p><span id="aa"></span>
+						<p>WCAG AAA:</p><span id="aaa"></span>
 
 						<h4>Large Text</h4>
 						<p>WCAG AA:</p><span id="aaL"></span>
@@ -66,6 +67,7 @@
 
 						<h4>Components</h4>
 						<p>WCAG AA:</p><span id="aaLC"></span>
+					</div>
 					</div>
 				</div>
 			</div>

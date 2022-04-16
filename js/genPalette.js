@@ -50,7 +50,7 @@ function makePalette() {
             div.style.backgroundColor = `rgb(${data.result[i]})`;
             paletteContainer.appendChild(div);
         
-            //makes a span with the hex value an
+            //makes a span with the hex value
             span.innerText += rgbToHex(data.result[i])
             div.appendChild(span);
         }
