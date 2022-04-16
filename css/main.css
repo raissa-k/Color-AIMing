@@ -63,14 +63,6 @@ body {
    font-family: var(--font-family-primary);
    font-size: var(--font-size-text);
    color: var(--color-primary);
-   background-image: -webkit-repeating-radial-gradient(
-      center center,
-      var(--color-primary),
-      var(--color-primary) 1px,
-      var(--color-secondary) 1px,
-      var(--color-secondary) 100%
-   );
-   background-size: 8px 8px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -86,6 +78,11 @@ body {
    -webkit-box-direction: normal;
    -ms-flex-direction: column;
    flex-direction: column;
+}
+
+.toggle-label {
+   margin-left: 1rem;
+   font-weight: 800;
 }
 
 .colorSquare {
@@ -188,26 +185,6 @@ h2 {
    line-height: 1.25;
    font-size: var(--font-size-h2);
    font-size: clamp(2rem, 4vw, var(--font-size-h2));
-}
-.skip-link {
-   position: absolute;
-   top: auto;
-   left: -10000px;
-   width: 1px;
-   height: 1px;
-   background-color: var(--color-primary);
-   color: var(--color-secondary);
-   font-size: 1.125rem;
-   overflow: hidden;
-}
-.skip-link:focus {
-   position: fixed;
-   z-index: 999;
-   top: 0;
-   left: 0;
-   width: auto;
-   height: auto;
-   padding: 0.5rem 0.75rem;
 }
 
 #main > .container {
@@ -398,34 +375,4 @@ section + section {
 section > * + * {
    margin-top: 1em;
 }
-blockquote {
-   margin-left: 1em;
-   padding: 1em;
-   border: 4px solid;
-   border-image-slice: 1;
-   border-image-source: linear-gradient(
-      -90deg,
-      var(--color-primary),
-      transparent
-   );
-}
-@-webkit-keyframes scrolling-gradient {
-   0% {
-      background-position: 0;
-   }
-   100% {
-      background-position: 40px;
-   }
-}
 
-@media (prefers-reduced-motion: reduce) {
-   * {
-      -webkit-animation-duration: 0.01ms !important;
-      animation-duration: 0.01ms !important;
-      -webkit-animation-iteration-count: 1 !important;
-      animation-iteration-count: 1 !important;
-      -webkit-transition-duration: 0.01ms !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-   }
-}
