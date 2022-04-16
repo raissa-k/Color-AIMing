@@ -28,7 +28,7 @@ function makePalette() {
     const url = "http://colormind.io/api/";
     const sendData = {
 	model : "ui",
-	input : [paletteBase,"N","N","N","N"],
+	input : ["N","N",paletteBase,"N","N"],
 }
     fetch(url, {
         method: "POST",
