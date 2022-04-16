@@ -1,6 +1,6 @@
-# Color Palette Generator and Contrast Checker
+# Ready, AIM, Fire Colors!
+## All-in-One simple color palette generator and contrast checker
 [![Netlify Status](https://api.netlify.com/api/v1/badges/893bb78f-8f14-43ed-837e-5528af69ba61/deploy-status)](https://app.netlify.com/sites/palettecontrast/deploys)
-
 
 [See website](https://palettecontrast.netlify.app/)
 
