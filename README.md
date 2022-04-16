@@ -22,6 +22,7 @@ Finally, clicking the "Test contrast" button will take those values, check the c
 - Save palettes.
 - Possibly move from Colormind API to Huemint's, for extra customization possibilities to the palette generator.
 
-## APIs used:
+## APIs/Resources used:
+- NodeJS proxy: [Cors Anywhere](https://cors-everywhere.herokuapp.com/)
 - Palette generator: [Colormind](http://colormind.io/api-access/)
 - Color contrast checker: [WebAIM](https://webaim.org/resources/contrastchecker/)

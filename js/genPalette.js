@@ -25,7 +25,7 @@ const rgbToHex = ([r, g, b]) => {
 function makePalette() {
     //removes 'rgb(' and ')' from the color property to fit API requirements, inserts to data sent
     const paletteBase = Array.from(colorSquare.style.backgroundColor.slice(4,-1).split(','));
-    const url = "http://colormind.io/api/";
+    const url = "https://cors-everywhere.herokuapp.com/http://colormind.io/api/";
     const sendData = {
 	model : "ui",
 	input : ["N","N",paletteBase,"N","N"],
