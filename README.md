@@ -7,7 +7,7 @@
 ## About
 A website to solve a real problem (of mine): a one-stop palette maker and color contrast checker for accessibility. 
 
-![Website view](demo.png)
+![Website view](palettedemo.gif)
 
 [Colormind](http://colormind.io/)'s UI mode takes generates matching colors from a base input. The resulting palette will have the lightest and darkest colors on the left and right ends, respectively, which makes it easier to come up with colors for a project. Each color will also have its HEX value appended for ease of copy.
 
